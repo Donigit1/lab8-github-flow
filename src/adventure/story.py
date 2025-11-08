@@ -5,6 +5,8 @@ from rich.panel import Panel
 
 console = Console()
 
+default_message = "You stand still, unsure what to do. The forest swallows you."
+
 def step(choice: str, events):
     random_event = random.choice(events)
 
@@ -13,6 +15,7 @@ def step(choice: str, events):
     elif choice == "right":
         return f"[bold blue]You walk right.[/bold blue] {random_event}"
     else:
+
         return "[bold yellow]You stand still, unsure what to do. The forest swallows you.[/bold yellow]"
 
 if __name__ == "__main__":
