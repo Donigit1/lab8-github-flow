@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
         if choice == "exit":
             console.print("[bold red]You decide to leave the forest...[/bold red]")
-            console.print("[green italic]Goodbye, traveler. The adventure awaits another day![/green italic]")
+            console.print("[bold green]Farewell, traveler! Until the next adventure! [/bold green]")
             break
 
         console.print(step(choice, events))
